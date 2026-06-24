@@ -338,9 +338,9 @@ img { max-width: 100%; display: block; }
 }
 
 .scroll-arrow {
-  width: 20px;
-  height: 20px;
-  border: 2px solid rgba(255,250,245,0.3);
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid rgba(255,250,245,0.4);
   border-left: 0;
   border-top: 0;
   transform: rotate(45deg);
