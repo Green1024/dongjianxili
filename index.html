@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>东鉴西历 — 东方智慧为鉴，西方运历为伴</title>
+  <meta name="description" content="融合东方命理（八字、经络、生肖）与西方星座文化（星座、塔罗）的一站式运势生活指南小程序。每天打开，用一分钟了解今日的节奏。">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ====== 导航栏 ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">☰</span>
+        <span>东鉴西历</span>
+      </a>
+      <div class="nav-menu" id="navMenu">
+        <a href="#features" class="nav-link">功能介绍</a>
+        <a href="#detail" class="nav-link">了解更多</a>
+        <a href="#about" class="nav-link">理念</a>
+        <a href="#howto" class="nav-link">体验</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====== Hero ====== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">微信小程序 · 已上线</div>
+        <h1 class="hero-title">
+          <span class="title-char">东</span>
+          <span class="title-char">鉴</span>
+          <span class="title-char">西</span>
+          <span class="title-char">历</span>
+        </h1>
+        <p class="hero-subtitle">东方智慧为鉴，西方运历为伴</p>
+        <p class="hero-desc">
+          每天打开，用一分钟了解今日的节奏。<br>
+          八字 · 星座 · 塔罗 · 经络 · 合婚 · 生肖
+        </p>
+        <div class="hero-actions">
+          <a href="#howto" class="btn btn-primary">立即体验</a>
+          <a href="#features" class="btn btn-outline">功能介绍</a>
+        </div>
+        <div class="hero-scroll">
+          <span>向下探索</span>
+          <div class="scroll-arrow"></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="phone-header">
+              <span class="phone-time">08:00</span>
+              <div class="phone-icons">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="phone-content">
+              <div class="mockup-score">
+                <div class="score-ring">
+                  <svg viewBox="0 0 120 120" class="ring-svg">
+                    <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(139,26,26,0.15)" stroke-width="6"/>
+                    <circle cx="60" cy="60" r="52" fill="none" stroke="#8B1A1A" stroke-width="6"
+                      stroke-dasharray="326.7" stroke-dashoffset="98" stroke-linecap="round"
+                      transform="rotate(-90, 60, 60)"/>
+                  </svg>
+                  <div class="score-text">
+                    <span class="score-num">82</span>
+                    <span class="score-label">综合运势</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mockup-elements">
+                <div class="mockup-item">
+                  <span class="mockup-label">五行</span>
+                  <div class="mockup-bar"><div class="bar-fill" style="width:75%"></div></div>
+                </div>
+                <div class="mockup-item">
+                  <span class="mockup-label">宜</span>
+                  <span class="mockup-tag">签约 · 出行 · 学习</span>
+                </div>
+                <div class="mockup-item">
+                  <span class="mockup-label">签文</span>
+                  <span class="mockup-text">「顺天应时，万事可期」</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 功能介绍 ====== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">核心功能</span>
+        <h2>一App聚合东方智慧与西方运历</h2>
+        <p>不用多个App切换，这里一站看齐</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-delay="0">
+          <div class="feature-icon">☯</div>
+          <h3>八字排盘</h3>
+          <p>输入出生信息，生成完整命盘。四柱八字、五行旺弱、十神格局、大运流年，支持阴历输入自动转换。</p>
+        </div>
+        <div class="feature-card" data-delay="100">
+          <div class="feature-icon">♈</div>
+          <h3>星座运势</h3>
+          <p>12星座今日/本周运势、多维评分、星座档案，还支持星座配对，看看你和谁最合拍。</p>
+        </div>
+        <div class="feature-card" data-delay="200">
+          <div class="feature-icon">🃏</div>
+          <h3>塔罗占卜</h3>
+          <p>每日一牌获取今日灵感，经典三牌阵（过去-现在-未来）深入解读，22张大阿尔卡纳正逆位。</p>
+        </div>
+        <div class="feature-card" data-delay="300">
+          <div class="feature-icon">💕</div>
+          <h3>八字合婚</h3>
+          <p>日干、地支、五行、十神、生肖、星座多维度综合评分，看两人缘分配比，附带详细评语。</p>
+        </div>
+        <div class="feature-card" data-delay="100">
+          <div class="feature-icon">🌿</div>
+          <h3>经络养生</h3>
+          <p>子午流注十二时辰实时经络指引，告诉你几点该做什么、按揉哪个穴位，24节气养生策略。</p>
+        </div>
+        <div class="feature-card" data-delay="200">
+          <div class="feature-icon">🐉</div>
+          <h3>生肖配对</h3>
+          <p>十二生肖三合六合冲害刑完整关系表，支持手动修改生肖，看看你和身边的人属相合不合。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 了解更多 ====== -->
+  <section class="detail" id="detail">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">更多细节</span>
+        <h2>每一个细节，都用心打磨</h2>
+      </div>
+      <div class="detail-scroll-container">
+        <div class="detail-list" id="detailList">
+          <div class="detail-item">
+            <div class="detail-num">01</div>
+            <div class="detail-info">
+              <h4>神煞系统</h4>
+              <p>天乙贵人、文昌星、桃花星、驿马星……看看你命里带了哪些吉星神煞。</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-num">02</div>
+            <div class="detail-info">
+              <h4>每日吉时</h4>
+              <p>今天哪个时辰最顺？哪个时辰要小心？日干十二时辰吉凶一目了然。</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-num">03</div>
+            <div class="detail-info">
+              <h4>本命年提醒</h4>
+              <p>自动检测是否值太岁，附化太岁建议，让你安心度过本命年。</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-num">04</div>
+            <div class="detail-info">
+              <h4>运势月历</h4>
+              <p>一个月的运势波动全景展示，哪天适合冲刺、哪天适合休整，提前规划。</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-num">05</div>
+            <div class="detail-info">
+              <h4>签到打卡</h4>
+              <p>每天签到，养成看运势的习惯，积累你的运势日记。</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-num">06</div>
+            <div class="detail-info">
+              <h4>每日一学</h4>
+              <p>八字入门知识科普，每天学一点，慢慢从小白变懂行。</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-num">07</div>
+            <div class="detail-info">
+              <h4>多档案管理</h4>
+              <p>可以存多个人的信息，帮家人朋友一起看，一目了然。</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <div class="detail-num">08</div>
+            <div class="detail-info">
+              <h4>每日推送</h4>
+              <p>订阅后每天08:00自动推送当日运势，早晨睁眼就能看到今日指引。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 理念 ====== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <span class="section-tag">产品理念</span>
+          <h2>不是算命，是生活节律参考</h2>
+          <p>
+            八字讲的是你出生那一刻的能量配置，星座讲的是你的性格底色，
+            塔罗讲的是当下的灵感提示。它们不预测命运，只是帮你多一个角度理解自己、安排生活。
+          </p>
+          <p>
+            就像看天气预报一样——知道今天要下雨，出门带把伞。
+            知道今天能量适合创造还是休养，就顺着节奏走。
+          </p>
+          <div class="about-quote">
+            <span class="quote-mark">"</span>
+            <p>传统文化娱乐用途，放松看待，开心就好。</p>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-circle"></div>
+          <div class="about-symbols">
+            <span>☯</span>
+            <span>♈</span>
+            <span>🃏</span>
+            <span>🌿</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 体验方式 ====== -->
+  <section class="howto" id="howto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">立即体验</span>
+        <h2>三步开启每日运势之旅</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h4>打开微信</h4>
+          <p>启动微信，确保已登录账号</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h4>搜索「东鉴西历」</h4>
+          <p>在微信顶部搜索框输入「东鉴西历」</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h4>开始使用</h4>
+          <p>打开小程序，每日运势即刻呈现</p>
+        </div>
+      </div>
+      <div class="howto-qr">
+        <div class="qr-box">
+          <div class="qr-placeholder">
+            <div class="qr-inner">
+              <span class="qr-icon">📱</span>
+              <span>微信搜索</span>
+              <strong>「东鉴西历」</strong>
+            </div>
+          </div>
+          <p>或关注公众号获取最新资讯</p>
+        </div>
+        <div class="qr-box">
+          <div class="qr-placeholder">
+            <img src="images/qrcode-gzh.jpg" alt="东鉴西历公众号二维码" class="qr-img">
+          </div>
+          <p>扫码关注公众号</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">☰ 东鉴西历</span>
+          <p>东方智慧为鉴，西方运历为伴</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>功能</h5>
+            <a href="#">八字排盘</a>
+            <a href="#">星座运势</a>
+            <a href="#">塔罗占卜</a>
+            <a href="#">经络养生</a>
+          </div>
+          <div class="footer-col">
+            <h5>支持</h5>
+            <a href="#">意见反馈</a>
+            <a href="#">公众号</a>
+            <a href="#">隐私政策</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 东鉴西历 · 传统文化娱乐用途，放松看待，开心就好</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
